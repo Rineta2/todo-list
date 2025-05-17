@@ -8,7 +8,7 @@ export async function middleware(request: NextRequest) {
   // Get the session token
   const token = await getToken({
     req: request,
-    secret: process.env.NEXTAUTH_SECRET,
+    secret: process.env.NEXT_AUTH_SECRET,
   });
 
   // Protected routes that require authentication

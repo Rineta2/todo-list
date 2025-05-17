@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGO_DB_SERVER =
-  process.env.MONGO_DB_SERVER || "mongodb://localhost:27017/todo-list";
+const MONGO_DB_SERVER = process.env.MONGO_DB_SERVER as string;
 
 export async function connectDB() {
   try {
