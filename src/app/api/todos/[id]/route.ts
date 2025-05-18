@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-
 import { connectDB } from "@/utils/mongodb/mongodb";
-
 import { Todo } from "@/models/Todo";
 
 export const dynamic = "force-dynamic";

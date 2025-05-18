@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import Navigation from "@/components/layout/navigation";
 
-import Header from "@/components/layout/header"
+import Profile from "@/components/layout/Profile"
 
 const Pathname = ({ children }: { children: React.ReactNode }) => {
     const pathname = usePathname();
@@ -18,7 +18,7 @@ const Pathname = ({ children }: { children: React.ReactNode }) => {
 
     return (
         <Fragment>
-            {showLayout && <Header />}
+            {showLayout && <Profile />}
             {children}
             {showLayout && <Navigation />}
         </Fragment>

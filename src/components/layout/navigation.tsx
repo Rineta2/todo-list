@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { User, Plus, House } from "lucide-react"
+import { User, Plus, House, CalendarCheck2, Search } from "lucide-react"
 
 import Link from 'next/link'
 
@@ -13,14 +13,30 @@ const navLink = [
         label: "home",
         href: "/home"
     },
+
     {
         id: 2,
+        icons: CalendarCheck2,
+        label: "Calendar",
+        href: "/calendar"
+    },
+
+    {
+        id: 3,
         icons: Plus,
         label: "Create",
         href: "/todolist"
     },
+
     {
-        id: 3,
+        id: 4,
+        icons: Search,
+        label: "Search",
+        href: "/search"
+    },
+
+    {
+        id: 5,
         icons: User,
         label: "Profile",
         href: "/profile"

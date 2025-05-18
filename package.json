@@ -10,6 +10,7 @@
     "postinstall": "flowbite-react patch"
   },
   "dependencies": {
+    "@auth/core": "^0.34.2",
     "@next/bundle-analyzer": "^15.3.2",
     "@types/bcryptjs": "^2.4.6",
     "@types/js-cookie": "^3.0.6",

@@ -10,7 +10,6 @@ export async function middleware(request: NextRequest) {
     req: request,
     secret: process.env.NEXT_AUTH_SECRET,
   });
-
   // Protected routes that require authentication
   const protectedRoutes = ["/todolist", "/profile", "/home"];
 
